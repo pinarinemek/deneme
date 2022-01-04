@@ -1,0 +1,40 @@
+1. 
+Kısıtlar :  courses != null, name != null, 1 <= year <= 4, 0.0 <= gpa <= 4.0
+
+public class Student
+{
+private List<Course> courses;
+private String name;
+private int year;
+private double gpa;
+......
+
+
+
+
+
+Yukarıdaki sınıfa aşağıda istenenleri ekleyiniz.
+
+a) Bu türdeki nesneleri eşitlik için karşılaştırmayı mümkün kılınız?
+b)Nesneleri, yıla, kurs veya isim  sırasına göre sıralama imkanı vermesi.
+d) Nesnenin ve tüm durumunun derin bir kopyasını oluşturmayı mümkün kılın.
+
+Herhangi bir yönteme geçersiz bir parametre değeri geçirilirse, yöntemin aksini beklemediği durumlar dışında bir IllegalArgumentException atmasını sağlayın.
+Gerekli yöntemleri ekleyin ve sınıf başlığında gerekli değişiklikleri yapın. Sınıfa herhangi bir alan veya kurucu eklememelisiniz. Yöntemlerinizden hiçbiri herhangi bir Öğrenci nesnesinin durumunu değiştirmemelidir.
+
+2.
+
+Aşağıda gösterildiği gibi Queue arabirimini uygulayan bir sınıf yazın. Queue, verileri kabul eden ve ardından bunları alındığı sıraya göre (ilk giren ilk çıkar sırasına göre) döndüren bir veri yapısıdır. Öğeler Queue'nin sonuna eklenir ve başından çıkarılır.
+
+public interface Queue {
+	public int size(); //Kuyruktaki nesnelerin sayısını döndürür
+	public boolean isEmpty(); //Kuyruk boşsa true döndürür
+	//Kuyruk sonuna bir öğe ekler
+	public void enqueue(Object o);
+	//Öğeyi kuyruğun başından kaldırır ve döndürür
+	public Object dequeue();
+}
+
+Kuyruk uygulamanız herhangi bir paketten erişilebilir ve kullanılabilir olmalıdır. Ancak, sınıfınızı genişletmeye yönelik herhangi bir girişim, bir derleme zamanı hatası üretmelidir.
+
+
